@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Vegas Outdoors</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- build:css({app,.tmp}) /css/main.css -->
+    <!-- Syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.js -->
+    <script src="_bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bicycle <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Commuting</a>
+                            </li>
+                            <li><a href="#">Road Cycling</a>
+                            </li>
+                            <li><a href="#">Mountain Biking</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rock <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Rock Climbing</a>
+                            </li>
+                            <li><a href="#">Canyoneering</a>
+                            </li>
+                            <li><a href="#">Holder</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Water <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Kayaking</a>
+                            </li>
+                            <li><a href="#">Sailing</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">About</a>
+                    </li>
+                    <li><a href="contribute.html">Contribute</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {{ content }}
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a>
+        </p>
+        <p>&copy; 2013 Vegas Outdoors &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="_bower_components/jquery/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/main.js -->
+    <script data-main="js/main" src="_bower_components/requirejs/require.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
