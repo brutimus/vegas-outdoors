@@ -163,12 +163,17 @@ module.exports = function (grunt) {
       }
     },
     requirejs: {
-        dist: {
+        compile: {
             // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
             options: {
+                name: 'main',
                 // `name` and `out` is set by grunt-usemin
                 baseUrl: '<%= yeoman.app %>/js',
-                optimize: 'none',
+                // optimize: 'uglify2',
+                // dir: '<%= yeoman.dist %>/js',
+                out: '<%= yeoman.dist %>/js/main.js',
+                // skipDirOptimize: false,
+                mainConfigFile: '<%= yeoman.app %>/js/main.js',
                 // TODO: Figure out how to make sourcemaps work with grunt-usemin
                 // https://github.com/yeoman/grunt-usemin/issues/30
                 //generateSourceMaps: true,
@@ -176,7 +181,7 @@ module.exports = function (grunt) {
                 // http://requirejs.org/docs/errors.html#sourcemapcomments
                 preserveLicenseComments: false,
                 useStrict: true,
-                wrap: true
+                // wrap: true
                 //uglify2: {} // https://github.com/mishoo/UglifyJS2
             }
         }
@@ -231,15 +236,15 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= yeoman.dist %>'
       },
-      html: '<%= yeoman.dist %>/default.html'
+      html: ['<%= yeoman.dist %>/{,*/}*.html'],
+      css: ['<%= yeoman.dist %>/css/{,*/}*.css']
     },
     usemin: {
       options: {
-        basedir: '<%= yeoman.dist %>',
-        dirs: ['<%= yeoman.dist %>/**/*']
+        assetsDirs: '<%= yeoman.dist %>'
       },
-      html: ['<%= yeoman.dist %>/**/*.html'],
-      css: ['<%= yeoman.dist %>/css/**/*.css']
+      html: ['<%= yeoman.dist %>/{,*/}*.html'],
+      css: ['<%= yeoman.dist %>/css/{,*/}*.css']
     },
     htmlmin: {
       dist: {
@@ -305,9 +310,9 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here
-            //'_bower_components/jquery/jquery.js',
+            // '_bower_components/jquery/jquery.js'
             //'favicon.ico',
             //'apple-touch*.png'
           ],
@@ -450,10 +455,10 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'useminPrepare',
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist',
+    'useminPrepare',
     'autoprefixer:dist',
     'requirejs',
     'concat',

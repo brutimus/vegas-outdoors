@@ -87,7 +87,7 @@ require.config({
     }
 });
 
-require(['jquery', 'bootstrapDropdown', 'bootstrapCollapse', 'bootstrapCarousel'], function (app, $) {
+require(['jquery', 'bootstrapDropdown', 'bootstrapCollapse'], function (app, $) {
     'use strict';
     // use app here
 });
