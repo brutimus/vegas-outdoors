@@ -5,7 +5,7 @@
 
 # Use _config.build.yml to override these settings on `grunt build`.
 
-name: vegas-outdoors-2
+name: Vegas Outdoors
 description: A site all about what Vegas has to offer outdoors
 
 author:

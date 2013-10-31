@@ -2,7 +2,10 @@
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+
+html {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
 
 body {
   color: #5a5a5a;
@@ -27,35 +30,6 @@ body {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 60px;
-
-  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-  margin-top: -90px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
 }
 
 
@@ -128,7 +102,86 @@ body {
 
 
 #dumbo {
-  background-image: url('/img/slide1.jpg');
+  background-image: url('/img/slide4.jpg');
+  background-size: cover;
   color: #fff;
   text-shadow: 0 0 75px #333;
+  box-shadow: 0 0 15px -3px black;
+}
+
+#bicycle-commute-dumbo {}
+
+#sidebar.affix {
+  top: 60px;
+  right: 30px;
+}
+
+#sidebar {
+  a {
+    display: block;
+    padding: 0;
+  }
+  li:hover {
+    background-color: #eeeeee;
+  }
+  li.active {
+    a {
+      color: white;
+    }
+    a:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+#shops {
+  img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+.moot.is-forum {
+  border: 2px solid rgba(0,0,0,.1);
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+footer {
+  margin: 30px 0;
 }

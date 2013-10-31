@@ -87,7 +87,37 @@ require.config({
     }
 });
 
-require(['jquery', 'bootstrapDropdown', 'bootstrapCollapse'], function (app, $) {
+require(['jquery', 'bootstrapDropdown', 'bootstrapCollapse', 'bootstrapScrollspy', 'bootstrapAffix'], function ($) {
     'use strict';
-    // use app here
+    
+    // Off-Canvas Navigation Toggle
+    $(document).load(function() {
+      $('[data-toggle=offcanvas]').click(function() {
+        $('.row-offcanvas').toggleClass('active');
+      });
+    });
+
+    // Figure out why these don't fire automatically within bootstrap code
+
+    $(document).ready(function () {
+        $('[data-spy="scroll"]').each(function () {
+          var $spy = $(this)
+          $spy.scrollspy($spy.data())
+        })
+      })
+
+    $(document).ready(function () {
+        $('[data-spy="affix"]').each(function () {
+          var $spy = $(this)
+          var data = $spy.data()
+
+          data.offset = data.offset || {}
+
+          if (data.offsetBottom) data.offset.bottom = data.offsetBottom
+          if (data.offsetTop)    data.offset.top    = data.offsetTop
+
+          $spy.affix(data)
+        })
+      })
+
 });

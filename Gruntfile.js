@@ -40,7 +40,7 @@ module.exports = function (grunt) {
       },
       jekyll: {
         files: [
-          '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
+          '<%= yeoman.app %>/**/*.{html,yml,yaml,md,mkd,markdown}',
           '_config.yml',
           '!<%= yeoman.app %>/_bower_components'
         ],
@@ -53,7 +53,7 @@ module.exports = function (grunt) {
         files: [
           '.jekyll/**/*.html',
           '.tmp/css/**/*.css',
-          '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+          '{.tmp,<%= yeoman.app %>}/js/{,*/}*.js',
           '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
         ]
       }
@@ -181,7 +181,7 @@ module.exports = function (grunt) {
                 // http://requirejs.org/docs/errors.html#sourcemapcomments
                 preserveLicenseComments: false,
                 useStrict: true,
-                // wrap: true
+                wrap: true
                 //uglify2: {} // https://github.com/mishoo/UglifyJS2
             }
         }
@@ -236,15 +236,15 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= yeoman.dist %>'
       },
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
-      css: ['<%= yeoman.dist %>/css/{,*/}*.css']
+      html: ['<%= yeoman.dist %>/**/*.html'],
+      css: ['<%= yeoman.dist %>/css/**/*.css']
     },
     usemin: {
       options: {
         assetsDirs: '<%= yeoman.dist %>'
       },
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
-      css: ['<%= yeoman.dist %>/css/{,*/}*.css']
+      html: ['<%= yeoman.dist %>/**/*.html'],
+      css: ['<%= yeoman.dist %>/css/**/*.css']
     },
     htmlmin: {
       dist: {
