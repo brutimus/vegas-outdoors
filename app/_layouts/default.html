@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/syntax.css">
     <!-- endbuild -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=false">
+    </script>
 </head>
 
 <body {{ page.bodyAttrs }}>
@@ -27,46 +30,46 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a>
+                    <li><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Vegas Outdoors</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bicycle <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bicycle&nbsp;<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/bicycle/commute/">Commuting</a>
+                            <li><a href="/bicycle/commute/">Commute</a>
                             </li>
-                            <li><a href="/bicycle/road/">Road Cycling</a>
+                            <li><a href="/bicycle/road/">Road</a>
                             </li>
-                            <li><a href="/bicycle/mountain/">Mountain Biking</a>
+                            <li><a href="/bicycle/mountain/">Mountain</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rock <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rock&nbsp;<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/rock/hiking/">Hiking</a>
+                            <li><a href="/rock/hike/">Hike</a>
                             </li>
-                            <li><a href="/rock/climbing/">Rock Climbing</a>
+                            <li><a href="/rock/climb/">Climb</a>
                             </li>
-                            <li><a href="/rock/canyoneering/">Canyoneering</a>
+                            <li><a href="/rock/canyoneer/">Canyoneer</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Water <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Water&nbsp;<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/water/kayaking/">Kayaking</a>
+                            <li><a href="/water/kayak/">Kayak</a>
                             </li>
-                            <li><a href="/water/sailing/">Sailing</a>
+                            <li><a href="/water/sail/">Sail</a>
                             </li>
-                            <li><a href="/water/scuba/">Scuba</a>
+                            <li><a href="/water/dive/">Dive</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/about/">About</a>
-                    </li>
                     <li><a href="/contribute/">Contribute</a>
+                    </li>
+                    <li><a href="/about/">About</a>
                     </li>
                 </ul>
             </div>
@@ -76,11 +79,13 @@
     {{ content }}
 
     <!-- FOOTER -->
+    <div class="clearfix"></div>
     <div class="container">
+      <hr class="featurette-divider">
       <footer>
           <p class="pull-right"><a href="#">Back to top</a>
           </p>
-          <p>&copy; 2013 {{ site.name }} &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+          <p>&copy; 2013 {{ site.name }} <!-- &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
           </p>
       </footer>
     </div>

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bicycle Commute
-bodyAttrs: data-spy="scroll" data-target="#sidebar"
+bodyAttrs: data-spy="scroll" data-target="#sidebar" data-offset="30"
 ---
 
 <div class="container" style="padding-top:20px;">
@@ -12,93 +12,73 @@ bodyAttrs: data-spy="scroll" data-target="#sidebar"
             </p>
             <div class="jumbotron">
                 <div class="row">
-                    <div class="col-md-4 hidden-xs hidden-sm">
-                        <img class="featurette-image img-responsive" src="/img/bicycle.svg" alt="Climbing">
-                    </div>
-                    <div class="col-md-8">
-                        <h1>Commute</h1>
-                        <p>Whether you're in search of the best routes across town or the nearest bike shop, we'll point you in the right direction!</p>
-                    </div>
+                  <h1>Commute</h1>
+                  <p>Whether you're in search of the best routes across town or the nearest bike shop, we'll point you in the right direction!</p>
                 </div>
 
             </div>
             <div class="row" id="talk">
                 <h2 class="featurette-heading">Talk</h2>
                 <p class="lead">Contributor and bicycle advocate <a href="https://plus.google.com/u/0/114027275346231208038">Bryant Reynolds</a> shares his thoughts on the state of pedestrian commuting and transportation in the Las Vegas Valley.</p>
-                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                {% for post in site.categories.commute limit:3 %}
+                <div class="col-md-4">
+                    <h4>{{ post.title }}</h4>
+                    <p class="meta text-muted date"><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+                    <p>{{ post.tease }}</p>
+                    <p class="pull-right"><a href="{{ post.url }}">Read more &#187;</a></p>
+                </div>
+                {% endfor %}
+                <div class="clearfix"></div>
             </div>
             <hr class="featurette-divider">
             <div class="row" id="routes">
                 <h2 class="featurette-heading">Routes</h2>
-                <p class="lead">Commuting on a bicycle in the Las Vegas Valley is rarely a straight forward endeavor. With no established bicycle routes through the city, daily commutes become a guessing game of where bike trails and lanes connect.</p>
-                <p class="lead">Here, we would like to establish a list of best routes in and around the city. With these established routes, we hope to encourage more people to hop on the bike rather than drive to the grocery store. Also, with more cyclists concentrated on a few popular routes, we hope to eventually garner civil support and see more resources concentrated on lane marking and signs.</p>
+                <p class="lead">Bicycle commuting in Las Vegas is rarely straight forward. With no established bicycle routes through the city, daily commutes become a guessing game of where bike trails and lanes connect. Establishing a map of preferred routes will concentrate bicycle traffic on fewer streets to increase safety and allow more civil resources to be used on these travel corridors.</p>
             </div>
-            <div class="col-sm-6">
-                <h3>Henderson &harr; Town Square</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <!--/span-->
-            <div class="col-sm-6">
-                <h3>Henderson &harr; Boulder City</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <!--/span-->
-            <div class="col-sm-6">
-                <h3>Henderson &harr; Summerlin</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <!--/span-->
-            <div class="col-sm-6">
-                <h3>Henderson &harr; Red Rocks</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <!--/span-->
-            <div class="col-sm-6">
-                <h3>Henderson &harr; Airport</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <!--/span-->
-            <div class="col-sm-6">
-                <h3>Henderson &harr; North Las Vegas</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <!--/span-->
-            <div class="clearfix"></div>
-            <div class="alert alert-info">
-	            <p>If you would like to offer a recommendation or tell us about a possible new route, get in touch on the <a href="/contribute/" class="alert-link">contribute</a> page!</p>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row" id="shops">
-                <h2 class="featurette-heading">Shops</h2>
-                <p class="lead">Whether you're buying your first bike or going in for your 10,000 mile tuneup, there are enough bike shops in the valley to suit your needs.</p>
-                {% for shop in site.data.bikeshops %}
-                <div class="col-md-4">
-                	<h3>{{ shop.name }}</h3>
-                	<img class="img-responsive img-rounded" src="http://api.tiles.mapbox.com/v3/examples.map-vyofok3q/pin-l-bicycle+48C({{ shop.lng }},{{ shop.lat }})/{{ shop.lng }},{{ shop.lat }}),12/200x200@2x.png">
+
+            <div class="container">
+                <div class="row" id="pointtopoint">
+                    <h3 class="page-header">Point to Point</h3>
+                    <p class="lead"><small>Safe routes between popular locations. Select a route for details.</small></p>
+                    {% include map.html id='ptp' data=site.data.bike-commute-routes.point-to-point %}
                 </div>
-                {% endfor %}
+                <div class="row" id="corridors">
+                    <h3 class="page-header">Corridors</h3>
+                    <p class="lead"><small>Proven travel corridors for longer distance commuting. These routes may prefer staying on a road with a bike lane over a designated trail as some trails tend to be very slow.</small></p>
+                    <p class="lead"><em>Coming Soon</em></p>
+                </div>
+                <div class="row" id="areas">
+                    <h3 class="page-header">Areas</h3>
+                    <p class="lead"><small>Thorough descriptions of difficult-to-travel areas. These include entrance and exit routes, bike rack locations and other useful information.</small></p>
+                    <p class="lead"><em>Coming Soon</em></p>
+                </div>
+                <div class="row" id="problem-areas">
+                    <h3 class="page-header">Problem Areas</h3>
+                    <p class="lead"><small>Bicycle commuting in Las Vegas is not without issues. Freeways are difficult to cross. Bike trails end abruptly without any obvious route to continue. Here, we've outlined some of the pain points and given you reasonable alternatives.</small></p>
+                    {% include map.html id='pa' data=site.data.bike-commute-problems.problem-areas %}
+                </div>
             </div>
+
+            <div class="clearfix"></div>
+            <hr class="featurette-divider">
+            {% include bike-shops.html %}
+            <div class="clearfix"></div>
             <hr class="featurette-divider">
             <div class="row" id="tips">
                 <h2 class="featurette-heading">Tips</h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="clearfix"></div>
+            <hr class="featurette-divider">
+            <div class="row" id="resources">
+                <h2 class="featurette-heading">Resources</h2>
+                <p class="lead">There exists many resources on cycling in and around Las Vegas already. As <em>{{ site.name }}</em> is not attempting to cover every detail of the community, we're leaving that up to our friends out there!</p>
+                <div class="list-group">
+                  <a href="http://bikinglasvegas.com/" class="list-group-item">
+                    <h4 class="list-group-item-heading">Biking Las Vegas</h4>
+                    <p class="list-group-item-text">Offers everything from a great community to dive into to classifieds, a forum and a local cycling group.</p>
+                  </a>
+                </div>
             </div>
         </div>
         <!--/row-->
@@ -107,11 +87,22 @@ bodyAttrs: data-spy="scroll" data-target="#sidebar"
 
     <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" data-spy="affix" data-offset-top="0">
         <ul class="list-group nav" role="navigation">
-            <li class="list-group-item active"><a href="#talk">Talk</a></li>
-            <li class="list-group-item"><a href="#routes">Routes</a></li>
-            <li class="list-group-item"><a href="#shops">Shops</a></li>
-            <li class="list-group-item"><a href="#tips">Tips</a></li>
+            <li class="list-group-item active"><a href="#talk"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;Talk</a></li>
+            <li class="list-group-item"><a href="#routes"><span class="glyphicon glyphicon-road"></span>&nbsp;&nbsp;Routes</a>
+            <ul class="list-group nav nested" style="height:113px;">
+                <li class="list-group-item"><a href="#pointtopoint">Point to Point</a></li>
+                <li class="list-group-item"><a href="#corridors">Corridors</a></li>
+                <li class="list-group-item"><a href="#areas">Areas</a></li>
+                <li class="list-group-item"><a href="#problem-areas">Problem Areas</a></li>
+            </ul>
+            </li>
+            <li class="list-group-item"><a href="#shops"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;&nbsp;Shops</a></li>
+            <li class="list-group-item"><a href="#tips"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Tips</a></li>
+            <li class="list-group-item"><a href="#resources"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;Resources</a></li>
         </ul>
+        <div class="alert alert-info">
+          <p>Got tips, ideas, suggestions? Get in touch on the <a href="/contribute/" class="alert-link">contribute</a> page!</p>
+        </div>
     </div>
     <!--/span-->
 </div>

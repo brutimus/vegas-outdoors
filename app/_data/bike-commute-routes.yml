@@ -1,0 +1,48 @@
+point-to-point:
+  - name: Green Valley &harr; Town Square
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-townsquare.kml
+    info:
+      distance: 8 mi
+      traffic: "Moderate in sections"
+      description: "Begin by working your way to Pecos on Wigwam (although Pebble, Windmill and Robindale are good options as well). Head north, then turn left on to Robindale, a smooth, flat and very low traffic road. Zip zag up to Gilespie then to Sunset. Sunset is the worst part with no bike lane and oftentimes traffic. Also consider cutting over to Las Vegas Blvd instead."
+
+  - name: Green Valley &harr; Boulder City
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-bouldercity.kml
+    info:
+      distance: 22 mi
+      traffic: "Very low"
+      description: "Start eastbound on the very nice Paseo Verde trail to Valle Verde. Continue in the traffic lane on Paseo Verde to Chapata Dr, just past Stephanie. Turn north and get on the Railroad trail behind the Reunion Trails Park and follow East. This trail crosses many roads, use caution. Exit the trail where it ends at Paradise Hills Dr and turn left to pass under I-515 / 93. When the road ends (takes a left turn), take the entrance to the River Mountains Trail on your right. Enter the RMT and turn right (South) and continue until Veterans Dr. Take Veterans Dr to Veterans Memorial Dr, turn left, follow to 93. Turn left on to 93, then immediately turn right on to Colorado St. Take this straight to Nevada Way."
+
+  - name: Green Valley &harr; Summerlin
+    kmls:
+
+  - name: Green Valley &harr; Red Rocks
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-redrocks.kml
+    info:
+      distance: 28 mi
+      traffic: "Moderate to High, but Safe"
+      description: "Start westbound on Paseo Verde to Pecos. Cross Pecos at the light and briefly travel north on the multi-use sidewalk/trail until it meets the I-215 Trail. Enter the trail westbound and follow to Windmill Ln. Exit the trail and travel westbound on Windmill Ln. Once it crosses the I-15, it turns into 160 / Blue Diamond, continue westbound. This section is very high traffic at times, but recent construction has created an excellent bike lane. At the edge of town, turn right on to 159 (signage for Red Rocks) towards Red Rocks. Continue on 159 until you see the Red Rocks entrance."
+
+  - name: Green Valley &harr; Airport
+    kmls:
+
+  - name: Green Valley &harr; North Las Vegas
+    kmls:
+
+  - name: Summerlin &harr; Airport
+    kmls:
+
+  - name: Summerlin &harr; North Las Vegas
+    kmls:
+
+  - name: Boulder City &harr; Red Rocks
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-bouldercity.kml
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-redrocks.kml
+    info:
+      distance: 50 mi
+      traffic: "Moderate to High, but Safe"
+      description: "This is a very long route consisting of two parts already detailed. Please refer to <em>Henderson&nbsp;&harr;&nbsp;Boulder City</em> and <em>Henderson&nbsp;&harr;&nbsp;Red Rocks</em>."

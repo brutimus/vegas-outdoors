@@ -10,7 +10,6 @@ html {
 body {
   color: #5a5a5a;
   padding-top: 40px;
-  padding-bottom: 20px;
 }
 
 
@@ -30,6 +29,13 @@ body {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.nav-icon {
+  height: 26px;
+  margin-top: -9px;
+  margin-bottom: -6px;
+  margin-right: 3px;
 }
 
 
@@ -105,11 +111,13 @@ body {
   background-image: url('/img/slide4.jpg');
   background-size: cover;
   color: #fff;
-  text-shadow: 0 0 75px #333;
+  text-shadow: 0 0 60px #000;
   box-shadow: 0 0 15px -3px black;
 }
 
-#bicycle-commute-dumbo {}
+#talk h4 {
+  margin-bottom: 0;
+}
 
 #sidebar.affix {
   top: 60px;
@@ -117,27 +125,108 @@ body {
 }
 
 #sidebar {
-  a {
+  li a {
     display: block;
     padding: 0;
   }
   li:hover {
     background-color: #eeeeee;
   }
-  li.active {
-    a {
-      color: white;
-    }
-    a:hover {
-      background-color: transparent;
-    }
+  li.active > a {
+    color: white;
+    text-shadow: 0 -1px 0 #3071a9;
+  }
+  li.active > a:hover {
+    background-color: transparent;
+  }
+  .list-group.nested {
+    margin-top: 8px;
+    margin-bottom: 0;
+    border: 0;
+    box-shadow: none;
+    overflow: hidden;
+    -webkit-transition: height .3s, margin-top .3s;
+  }
+  .list-group-item:not(.active) .list-group.nested {
+    height: 0px !important;
+    margin-top: 0px;
+  }
+  .nested .list-group-item {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 4px 22px;
+  }
+  .nested .list-group-item:first-child {
+    border-top: 1px solid white;
+  }
+  .nested .list-group-item:last-child {
+    border-bottom: 1px solid white;
+  }
+  .list-group-item.active {
+    text-shadow: none;
   }
 }
 
-#shops {
-  img {
-    max-width: 200px;
-    max-height: 200px;
+.map-canvas {
+  height: 400px;
+  border: 1px solid #eee;
+}
+.table-container .panel {
+  max-height: 400px;
+  overflow: scroll;
+}
+.map-table {
+  // .panel class is needed for accordion, but we don't want the styles.
+  tr.panel {
+    margin-bottom: inherit;
+    background-color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+  }
+  td {
+    display: block;
+  }
+  tr.panel td:first-child {
+    cursor: pointer;
+  }
+  tr.panel td:first-child:before {
+    content: '\e114';
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 4px;
+  }
+  tr.panel td:first-child a {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: -5px;
+  }
+  tr td.collapsed:first-child:before {
+    content: '\e080';
+  }
+  td:last-child {
+    height: 0px;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+  }
+  td.collapsing:last-child, td.in:last-child {
+    border-top: 1px solid #dddddd;
+  }
+  .collapsing.panel-collapse .container, .in.panel-collapse .container {
+    padding: 10px 15px;
+    box-shadow: 0 0 10px -5px black inset;
+
+  }
+  .panel-collapse .container p {
+    margin-bottom: 0px;
+    font-size: 0.8em;
   }
 }
 
@@ -181,6 +270,17 @@ body {
     width: 50%; /* 6 columns */
   }
 }
+
+/* POST CSS
+-------------------------------------------------- */
+.meta {
+  margin-bottom: 0;
+}
+
+.meta.date {
+  margin-bottom: 10px;
+}
+
 
 footer {
   margin: 30px 0;

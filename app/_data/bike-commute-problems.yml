@@ -1,0 +1,104 @@
+problem-areas:
+  - name: Crossing I-215 Southeast
+    info:
+      description: "Crossing I-215 in Green Valley / Henderson is one of the bigger pain points of bicycle commuting in this area. Most crossings are too high traffic to travel in the traffic lanes safely. Here is a rundown of all crossing.<br /><br />Quick tip: Robindale and Arroyo Grande are your best routes across I-215."
+    points:
+      - name: Green Valley Pkwy
+        description: "In low traffic, crossing in the traffic lane is reasonable. Southbound is uphill, so use greater caution. Sidewalks offer a reasonable alternative."
+        lat: 36.0245
+        lng: -115.0848
+
+      - name: Pecos / St. Rose
+        description: "Bicycle lanes on both Pecos and St. Rose end shortly before crossing I-215. In low traffic, crossing in the traffic lane is reasonable. Sidewalks offer a reasonable yet tedious alternative."
+        lat: 36.0236
+        lng: -115.1007
+
+      - name: Eastern
+        description: "Bicycle travel on any part of Eastern is not recommended. Crossing I-215 at Eastern is also inadvisable. Sidewalk travel is possible if absolutely necessary."
+        lat: 36.0237
+        lng: -115.1187
+
+      - name: Arroyo Grande
+        description: "This is the preferred route for crossing I-215 in this part of town. Arroyo Grande offers a full bike lane and minimal traffic."
+        lat: 36.0282
+        lng: -115.0561
+        icon: greenPin
+
+      - name: Valle Verde
+        description: "Bicycle lanes exist north of, but end shortly before the I-215 crossing. Valle Verde is oftentimes low traffic, so traveling in the traffic lane is acceptable. Use caution on the end of the road as cracks between the asphalt and concrete pose dangers to narrow tires."
+        lat: 36.0273
+        lng: -115.0627
+
+      - name: Stephanie
+        description: "When crossing I-215 southbound, traveling in the traffic lane is acceptable, but be aware that after crossing, you will be stuck in a higher traffic lane, so you may want to exit to a side road or sidewalk immediately. Crossing northbound in the traffic lane is inadvisable due to it being uphill and the dangers of the very high traffic I-215 eastbound on ramp."
+        lat: 36.0293
+        lng: -115.0470
+
+      - name: Gibson
+        description: "When traffic is low, crossing in the traffic lane is acceptable. Sidewalks on Gibson north of I-215 are also non-existent. You may want to consider an alternative route if traveling during high-traffic parts of the day."
+        lat: 36.0319
+        lng: -115.0294
+
+      - name: Pebble
+        description: "Need details"
+        lat: 36.0277
+        lng: -115.1300
+
+      - name: Wigwam
+        description: "Need details"
+        lat: 36.0351
+        lng: -115.1332
+
+      - name: Windmill
+        description: "Need details"
+        lat: 36.0424
+        lng: -115.1341
+
+      - name: Robindale
+        description: "Crossing I-215 here is one of your best options. Robindale offers a very low traffic and wide road. There are entrances to the 215 Trail just west of the crossing."
+        lat: 36.0501
+        lng: -115.1357
+        icon: greenPin
+
+      - name: Warm Springs
+        description: "Bicycle travel on this section of Warm Springs is not recommended, however, in the lowest traffic times, it becomes moderately safe. The I-215 crossing is complicated by confusing on and off ramps."
+        lat: 36.0572
+        lng: -115.1402
+
+      - name: Paradise
+        description: "Crossing I-215 at Paradise is a great option, but currently closed due to construction. The 215 Trail from the south ends at Warm Springs. This allowed you to then jump directly on to Paradise to continue north."
+        lat: 36.0584
+        lng: -115.1410
+        icon: redPin
+
+      - name: Gilispie
+        description: "Crossing I-215 on Gilispie is a relatively safe option, though do be cautious of the very high transit bus traffic here. Bike lanes do not exist, but traffic is generally low enough for travel in the traffic lane to be possible."
+        lat: 36.0635
+        lng: -115.1633
+        icon: greenPin
+
+  - name: Crossing I-15 South
+    info:
+      description: "Crossing I-15 is limited to only a couple routes. Luckily one, while intimidating, is quite safe for an experienced cyclist."
+    points:
+      - name: Warm Springs
+        description: Unknown state since reconstruction. Exploration needed.
+        lat: 36.05689
+        lng: -115.18071
+
+      - name: Windmill / Blue Diamond
+        description: "Crossing I-15 on Windmill / Blue Diamond is a bit intimidating, but once you grow comfortable with cycling in traffic, it is actually a reasonable route. Please do be cautious when crossing the on and off ramps for I-15."
+        lat: 36.0434
+        lng: -115.1808
+        icon: greenPin
+
+      - name: Silverado Ranch
+        description: "Crossing I-15 on Silverado Ranch Blvd is not recommended. There lacks bike lanes on the roadway leading up to the crossing and on the crossing itself. A sidewalk crossing is possible if necessary."
+        lat: 36.01319
+        lng: -115.18041
+
+      - name: St. Rose
+        description: "Crossing I-15 at St. Rose is an excellent option, though rarely useful given the extreme southern location. This crossing offers a very clear bike lane with moderate traffic. Use caution when crossing, however, as this is a very large intersection with some obscure lane markings."
+        lat: 35.9618
+        lng: -115.1818
+        icon: greenPin

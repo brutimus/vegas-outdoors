@@ -7,6 +7,7 @@
 
 name: Vegas Outdoors
 description: A site all about what Vegas has to offer outdoors
+base_url: http://127.0.0.1:9000
 
 author:
   name: Sean Stoops
@@ -45,3 +46,6 @@ markdown: redcarpet
 
 # Use Pygments to highlight code blocks
 pygments: true
+
+gmaps-api-key: AIzaSyBYOEYl7IAIs6KEe8_DYoQO_CAFfdIE5Bk
+

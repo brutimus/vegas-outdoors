@@ -1,0 +1,34 @@
+- name: Las Vegas Gran Fondo
+  description: "The Las Vegas Gran Fondo is the granddaddy of big cycling events in Las Vegas. Taking place in the fall after the summer heat break, it offers three route options: a short route usually under 20 miles, a moderate route around 60 miles and the longest route of at least 100 miles."
+  url: http://rtcws.rtcsnv.com/vivabikevegas/
+  date: Fall
+
+- name: Henderson Stroll ‘n Roll
+  description: "Henderson Stroll ‘n Roll is our spin on the Ciclovia phenomenon that’s sweeping the globe. Originally founded in Bogota, Columbia, it’s where roads are closed to motorized traffic, allowing the community to come together and enjoy the streets on bicycles, skates, skateboards or simply on foot."
+  url: http://cityofhenderson.com/public_works/bicycle/stroll_and_roll.php
+  date: November 9
+
+- name: Chocolate Chase
+  description: "The Chocolate Chase ride is a newer event in the valley where riders travel from merchant to merchant for a sweet chocolate surprise! This event offers three route options: 15, 30 or 50 miles."
+  url: http://www.active.com/henderson-nv/cycling/chocolate-chase-bike-ride-2013
+  date: Spring
+
+- name: Las Vegas Tour de Cure
+  description: "The Las Vegas Tour is striving to be the hands-down, all-time greatest rider experience in the City!  With amazing start and finish energy, fabulous food options at the rest stops, full lunch and live entertainment for every cyclist at the post-ride party, family fun zone with climbing wall, facepainting and food for purchase for those who want to support you and see you finish - the level of rider support and fun is like no other Vegas ride!"
+  url: "http://main.diabetes.org/site/TR?fr_id=9418&pg=entry"
+  date: May
+
+- name: Bike MS
+  description: "Bike MS is a fund raising ride to benefit those affected by multiple sclerosis. This ride offers multiple route options from 30 to 150 miles."
+  url: "http://bikenvl.nationalmssociety.org/site/TR?fr_id=21456&pg=entry"
+  date: November
+
+- name: Tour de Summerlin
+  description: "Tour de Summerlin offers three different ride distances for your enjoyment. Whether you’re a hard core century rider or just enjoy getting out on the bike, each route offers plenty of bike lanes and beautiful scenery. Route options are 40, 75 and 100 miles."
+  url: http://tourdesummerlin.com/
+  date: April
+
+- name: Tour de Fire
+  description: "Looking for a great way to start off your season? Come join us in April to ride our beautiful scenery! The Tour de Fire is a great century ride to benefit the Nevada Childhood Cancer Foundation. We offer multiple distances starting from 20, 48, 60, 74, 99 and 134 miles."
+  url: http://tdfire.com/
+  date: April

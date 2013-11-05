@@ -1,0 +1,44 @@
+- name: Calico Tanks
+  kmls:
+    - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/calico-tanks.kml
+  url: http://www.birdandhike.com/Hike/Red_Rocks/Calico_Tank/_Calico_Tank.htm
+  info:
+    distance: Roundtrip 2.5 mi
+    difficulty: Easy
+    description: "The trail starts with a casual incline up a rocky wash. As you progress, the incline becomes steeper and you will have to do a bit of scrambling across boulders. Once you reach the water feature, this is the 'tank'. Be sure you spend some time hiking around in this area as to not miss the view of Las Vegas and Red Rocks."
+
+- name: Bridge Mountain
+  kmls:
+    - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/bridge-mountain.kml
+  url: http://climber.org/driving/BridgeMountain.html
+  info:
+    distance: Roundtrip 19 mi
+    difficulty: Difficult
+    description: ""
+
+- name: Mt Charleston Loop
+  kmls:
+    - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/mt-charleston-hike.kml
+  url: http://www.birdandhike.com/Hike/Mt_Char/North_Loop/_North_Loop.htm
+  info:
+    distance: 18 mi
+    difficulty: Difficult
+    description: "Summiting Mt Charleston is one of the more popular difficult hikes in the area. This route is the full loop which leaves you several miles from your car if you left it at the opposite trail head. If you don't want to deal with multiple cars or hitchhiking, you might want to consider an out-n-back option once you reach the summit."
+
+- name: Anniversary Narrows
+  kmls:
+    - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/anniversary-narrows.kml
+  url: http://www.birdandhike.com/Hike/LAME/LovellWash_Narrows/_Lov_Narrows.htm
+  info:
+    distance: 2 mi
+    difficulty: Easy
+    description: ""
+
+- name: Arizona Hot Springs
+  kmls:
+    - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/arizona-hot-springs.kml
+  url: http://www.birdandhike.com/Hike/LAME/AZ_Hot_Spr/_AZ_HotSp.htm
+  info:
+    distance: 3.25 mi
+    difficulty: Moderate
+    description: ""

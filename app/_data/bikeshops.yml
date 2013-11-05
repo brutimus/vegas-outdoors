@@ -1,19 +1,135 @@
-- name: JT's Bike Shop
-  lat: 36.01432
-  lng: -114.99298
+- name: &N All Mountain Cyclery
+  url: https://plus.google.com/114443996580823968340/about
+  points:
+    - name: *N
+      lat: 35.97045
+      lng: -114.85309
+      icon: redPin
 
-- name: Bike Shop
-  lat: 36.03505
-  lng: -115.09887
+- name: &N Aspen Creek Cycling
+  url: https://plus.google.com/117386610794306692106/about
+  points:
+    - name: *N
+      lat: 36.01701
+      lng: -115.05628
+      icon: redPin
 
-- name: Aspen Creek Cycling
-  lat: 36.01701
-  lng: -115.05628
+- name: &N Bike Shop
+  url: https://plus.google.com/106950453588946988179/about
+  points:
+    - name: *N
+      lat: 36.03505
+      lng: -115.09887
+      icon: redPin
 
-- name: McGhie's Henderson
-  lat: 36.02818
-  lng: -115.04897
+- name: &N Bike World
+  url: https://plus.google.com/115824492590045171004/about
+  points:
+    - name: *N
+      lat: 36.1504
+      lng: -115.2437
+      icon: redPin
 
-- name: McGhie's Summerlin
-  lat: 36.11682
-  lng: -115.29726
+- name: &N Broken Spoke Bikes
+  url: https://plus.google.com/108614168154573787875/about
+  points:
+    - name: *N
+      lat: 36.1597
+      lng: -115.3500
+      icon: redPin
+
+- name: &N JT's Bike Shop
+  url: https://plus.google.com/115264387581480730837/about
+  points:
+    - name: *N
+      lat: 36.01432
+      lng: -114.99298
+      icon: redPin
+
+- name: &N Las Vegas Cyclery
+  url: https://plus.google.com/116801666310702373506/about
+  points:
+    - name: *N
+      lat: 36.1206
+      lng: -115.3217
+      icon: redPin
+
+- name: &N McGhie's Henderson
+  url: https://plus.google.com/103672923853883034390/about
+  points:
+    - name: *N
+      lat: 36.02818
+      lng: -115.04897
+      icon: redPin
+
+- name: &N McGhie's Summerlin
+  url: https://plus.google.com/103672923853883034390/about
+  points:
+    - name: *N
+      lat: 36.11682
+      lng: -115.29726
+      icon: redPin
+
+- name: &N Peleton Sports
+  url: https://plus.google.com/104013169066799676955/about
+  points:
+    - name: *N
+      lat: 36.1815
+      lng: -115.2609
+      icon: redPin
+
+- name: &N Pro Cyclery
+  url: https://plus.google.com/110150859362673810139/about
+  points:
+    - name: *N
+      lat: 36.15965
+      lng: -115.25161
+      icon: redPin
+
+- name: &N REI Boca Park
+  url: https://plus.google.com/105770710122991825773/about
+  points:
+    - name: *N
+      lat: 36.1635
+      lng: -115.2880
+      icon: redPin
+
+- name: &N REI Henderson
+  url: https://plus.google.com/110392201449722608669/about
+  points:
+    - name: *N
+      lat: 36.02207
+      lng: -115.08563
+      icon: redPin
+
+- name: &N Southern Highlands Cyclery
+  url: https://plus.google.com/109597563796015057002/about
+  points:
+    - name: *N
+      lat: 35.9977
+      lng: -115.206
+      icon: redPin
+
+- name: &N Southwest Bikes
+  url: https://plus.google.com/106740912543715822746/about
+  points:
+    - name: *N
+      lat: 36.27358
+      lng: -115.25279
+      icon: redPin
+
+- name: &N The Town Bike
+  url: https://plus.google.com/118136993942246522832/about
+  points:
+    - name: *N
+      lat: 36.1634
+      lng: -115.1460
+      icon: redPin
+
+- name: &N Vegas Bike Store
+  url: https://plus.google.com/109977710256996106328/about
+  points:
+    - name: *N
+      lat: 36.1186
+      lng: -115.2791
+      icon: redPin

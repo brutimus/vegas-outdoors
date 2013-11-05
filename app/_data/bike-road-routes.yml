@@ -1,0 +1,79 @@
+long:
+  - name: Green Valley to Boulder City
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-bouldercity.kml
+    info:
+      distance: Roundtrip 45 mi
+      difficulty: Easy
+      description: "The ride ride between Green Valley and Boulder City is an excellent one! With the new Union Pacific Railroad Trail in place, one needs to spend very little time negotiating roads. This route is mostly flat with a few hills around Railroad Pass Casino."
+
+  - name: Red Rocks Loop
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/red-rocks-loop.kml
+    info:
+      distance: 13 mi
+      difficulty: Moderate
+      description: "This route offers a challenge to the new cyclist and a workout to the experienced! The first few miles are an uphill battle. Keep cranking! Once you reach the summit, it's all downhill from here! Or so that's what you think. You'll face a couple more steep hills before finishing the scenic loop. Return to the visitor's center via Blue Diamond Rd."
+
+  - name: River Mountains Loop
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/river-mountains-loop.kml
+    info:
+      distance: 35 mi
+      difficulty: Moderate
+      description: "This loop makes for a great day on the bike! Many starting points exist around the loop. I recommend traveling clockwise around the loop starting at Equestrian Park in Henderson. You'll have a couple steep hills on the northwest side of the loop (they call them <em>The Three Sisters</em>. Sail down into Lake Mead Recreation Area and continue around and prepare for the climb into Boulder City. This climb isn't so bad, though, thanks to the old railroad bed put into place for the construction of Hoover Dam."
+
+  - name: Jean / Goodsprings
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/jean-goodsprings.kml
+    info:
+      distance: Roundtrip 32 mi / 46 mi
+      difficulty: Easy
+      description: "This route offers up a long stretch of wide open highway. If you're comfortable cycling on the edge of a narrow but low-traffic highway, then this route is a great option! The road from Vegas to Jean is very clean and smooth with little traffic. A small shoulder exists, but cycling here traps you in a narrow gap between the rumble strip and the edge of the pavement. With such little traffic, cycling in the traffic lane is acceptable.<br /><br />Turn around here for an easy day, or push it just a bit further with a 7 mi climb into Goodsprings. If you reach Goodsprings, you'll easily find a bar or a park to rest up before you ride home."
+
+  - name: Willow Beach / Arizona
+    info:
+      distance: 
+      difficulty: 
+      description: ""
+
+  - name: North Shore Road - Callville Bay
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/nsr-callville-bay.kml
+    info:
+      distance: Roundtrip 30 mi
+      difficulty: Easy-Moderate
+      description: "This ride is mostly easy, however, if you're allergic to hills, you might not want to drop down into Callville Bay. To get out, you have a couple miles of tough pedaling to get back up to the highway. I recommend packing lunch for your break at the picnic table overlooking the marina. North Shore Road is a great route on non-holidays. The road is very smooth and clean, but you will be riding in the traffic lane. Be careful of trailers and RV's."
+
+  - name: North Shore Road - Red Stone
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/nsr-red-stone.kml
+    info:
+      distance: Roundtrip 54 mi
+      difficulty: Moderate
+      description: "The ride to Red Stone Picnic Area will give you a pure sense of the openness of Nevada. While the ride is mostly easy, you'll have to negotiate some very long moderate climbs. Water starts to become a concern with this ride as you'll be pushing 54 miles with no opportunities to refill. If you feel like adding a few miles, you can drop down into Callville Bay for a rest before continuing on to Red Stone. The road is very smooth and clean, but you will be riding in the traffic lane. Be careful of trailers and RV's."
+
+  - name: North Shore Road - Echo Bay
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/nsr-echo-bay.kml
+    info:
+      distance: Roundtrip 80 mi
+      difficulty: Difficult
+      description: "The ride to Echo Bay is much like that of Red Stone, but longer. You need to be very aware of your water intake when attempting this ride, even in the coolest months. If you commit to this ride, I suggest finishing all the way to Echo Bay. If you stop short, you must make it all the way back to town on what water you have. The road is very smooth and clean, but you will be riding in the traffic lane. Be careful of trailers and RV's."
+
+  - name: Green Valley to Mountain Springs
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/green-valley-mountain-springs.kml
+    info:
+      distance: Roundtrip 55 mi
+      difficulty: Moderate-Difficult
+      description: "This makes for a great mixed ride. You spend some time working your way through town before reaching the base of the mountain and psyching yourself up for a good climb to the top. This route offers great bike lanes and wide shoulders the entire way."
+
+  - name: Mt. Charleston Loop
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/mt-charleston-loop.kml
+    info:
+      distance: 54 mi
+      difficulty: Difficult
+      description: "One of the most difficult rides in the area. You spend the first 13 or so miles cranking up and up. Kyle Canyon road is a steep ride, but you just keep pushing at a decent pace. Turning on to Deer Creek road some might consider to be a nightmare, unless you enjoy standing on your pedals in your lowest gear. Once you pass over the top, you get to settle in for some eye-watering downhill! Be careful here as in your state of exhaustion, you may not notice your speedometer easily hit 50 mph."
+

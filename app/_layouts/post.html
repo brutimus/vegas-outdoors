@@ -1,9 +1,48 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=2384363341";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container col-lg-8 col-lg-offset-2">
+	<h1>{{ page.title }}</h1>
+	<div class="col-sm-4">
+		<p class="meta author">By <a href="{{ page.gplus }}?rel=author">{{ page.author }}</a></p>
+		<p class="meta date text-muted"><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
+	</div>
+	<div class="col-sm-8">
+		<span class="pull-right">
+			<div class="g-plus" data-action="share" data-annotation="bubble" data-height="24"></div>
+			<div class="fb-like" data-href="{{ site.base_url }}{{ page.url }}" data-height="24" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
+		</span>
+	</div>
+	<div class="clearfix"></div>
+	<div class="post">
+		<p class="lead">{{ page.tease }}</p>
+		{{ content }}
+	</div>
 
-<div class="post">
-{{ content }}
+	<hr class="featurette-divider">
+
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <a class="moot" data-show_online="true" href="https://moot.it/i/vegas-outdoors{{ page.id }}">
+				   Comments for this blog entry
+				</a>
+            </div>
+        </div>
+    </div>
 </div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
