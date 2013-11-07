@@ -1,5 +1,6 @@
 <div id="{{ include.id }}-map-canvas" class="col-lg-8 map-canvas"></div>
 <div id="{{ include.id }}-table-container" class="col-lg-4 table-container">
+  <h4>Select for details</h4>
   <div class="panel panel-default">
     <table class="table table-striped table-condensed table-hover map-table" id="{{ include.id }}-table"></table>
   </div>
@@ -102,6 +103,11 @@
       if (el.info != null) $.each(el.info, function(key, val) {
         infoText += '<p><strong>' + key.substr(0,1).toUpperCase() + key.substr(1) + ':&nbsp;</strong>' + val + '</p>';
       });
+        if (el.kmls != null && el.kmls.length > 0) {
+          $.each(el.kmls, function(index, val) {
+            infoText += '<p><strong>Download:&nbsp;</strong><a href="' + val + '">Route ' + (index + 1) + '</a></p>'
+          });
+        };
         if (el.url != null) link = '<a href="' + el.url + '" class="pull-right">&#187;</a>';
       var row = $('<tr class="panel"><td class="collapsed" data-toggle="collapse" data-parent="#{{ include.id }}-table tbody" href="#{{ include.id }}-collapse'+ index +'">' + el.name + link + '</td><td id="{{ include.id }}-collapse'+ index +'" class="panel-collapse collapse"><div class="container">' + infoText + '</div></td></tr>').click(function(){
         // If we're showing everything, clicking should animate, not switch visibility
@@ -120,6 +126,7 @@
             if (active == layer) {
               active.setMap(null);
               active = null;
+              return;
             } else {
               if (active != null) {
                 active.setMap(null);

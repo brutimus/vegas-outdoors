@@ -9,9 +9,12 @@ html {
 
 body {
   color: #5a5a5a;
-  padding-top: 40px;
+  // padding-top: 40px;
 }
 
+.page-header {
+  font-weight: 400;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -24,6 +27,28 @@ body {
 
 .navbar {
   min-height: 40px;
+  font-size: 21px;
+  font-weight: 200;
+  .glyphicon {
+    line-height: 12px;
+  }
+  .dropdown-menu {
+    opacity: .95;
+  }
+  .dropdown-menu > li > a {
+    color: #428bca !important;
+  }
+  .dropdown-menu > li > a:hover {
+    color: white !important;
+  }
+  .navbar-toggle {
+    border: 1px solid #eee;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    .icon-bar {
+      background-color: #aaa;
+    }
+  }
 }
 
 .navbar-nav > li > a {
@@ -67,7 +92,9 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+  margin: 30px 0; /* Space out the Bootstrap <hr> more */
+  border-top: 1px solid #D35F5A;
+  opacity: .4;
 }
 
 /* Thin out the marketing headings */
@@ -76,6 +103,13 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+// .featurette-heading:after {
+//   content: '.';
+//   font-weight: 400;
+//   color: #D35F5A;
+//   margin-left: 1px;
+// }
 
 .featurette-image {
   max-height: 180px;
@@ -110,9 +144,32 @@ body {
 #dumbo {
   background-image: url('/img/slide4.jpg');
   background-size: cover;
-  color: #fff;
-  text-shadow: 0 0 60px #000;
   box-shadow: 0 0 15px -3px black;
+  padding: 30px;
+  .intro {
+    color: #fff;
+    // text-shadow: 0 0 60px #000;
+    text-shadow: 0 0 2px black;
+  }
+  h1 {
+    font-size: 70px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.tronic {
+  border: 1px solid #f0f0f0;
+  border-left: 2px solid #D35F5A;
+  padding: 20px inherit;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  h1 {
+    font-weight: 400;
+    letter-spacing: -2px;
+  }
 }
 
 #talk h4 {
@@ -120,8 +177,9 @@ body {
 }
 
 #sidebar.affix {
-  top: 60px;
-  right: 30px;
+  top: 81px;
+  right: 54px;
+  width: 300px;
 }
 
 #sidebar {
@@ -171,9 +229,17 @@ body {
   height: 400px;
   border: 1px solid #eee;
 }
-.table-container .panel {
-  max-height: 400px;
-  overflow: scroll;
+.table-container {
+  h4 {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .panel {
+    max-height: 376px;
+    overflow: scroll;
+  }
 }
 .map-table {
   // .panel class is needed for accordion, but we don't want the styles.

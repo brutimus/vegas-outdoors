@@ -1,4 +1,12 @@
 point-to-point:
+  - name: Green Valley &harr; The Strip
+    kmls:
+      - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-strip.kml
+    info:
+      distance: 12 mi
+      traffic: Moderate to High
+      description: "While not an obvious route to The Strip, this is a rather good one. Head up Pecos' wide and smooth bike lane before cutting west to Sunset Park. Work your way through north and exit on to McLeod. Continue north until Flamingo. Turn left on to Flamingo and ride the bike lane nearly the entire way to The Strip. About a block away, the bike lane ends and you either deal with the traffic lane or sidewalk."
+
   - name: Green Valley &harr; Town Square
     kmls:
       - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-townsquare.kml

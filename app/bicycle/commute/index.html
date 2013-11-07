@@ -1,21 +1,21 @@
 ---
 layout: default
 title: Bicycle Commute
-bodyAttrs: data-spy="scroll" data-target="#sidebar" data-offset="30"
+bodyAttrs: data-spy="scroll" data-target="#sidebar" data-offset="0"
 ---
 
 <div class="container" style="padding-top:20px;">
+    {% include navbar.html %}
     <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-xs-12 col-sm-9">
             <p class="pull-right visible-xs">
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
             </p>
-            <div class="jumbotron">
-                <div class="row">
-                  <h1>Commute</h1>
-                  <p>Whether you're in search of the best routes across town or the nearest bike shop, we'll point you in the right direction!</p>
-                </div>
-
+            <div class="jumbotron tronic">
+              <div class="row">
+                <h1>Commute</h1>
+                <p>Whether you're in search of the best routes across town or the nearest bike shop, we'll point you in the right direction!</p>
+              </div>
             </div>
             <div class="row" id="talk">
                 <h2 class="featurette-heading">Talk</h2>
@@ -39,7 +39,7 @@ bodyAttrs: data-spy="scroll" data-target="#sidebar" data-offset="30"
             <div class="container">
                 <div class="row" id="pointtopoint">
                     <h3 class="page-header">Point to Point</h3>
-                    <p class="lead"><small>Safe routes between popular locations. Select a route for details.</small></p>
+                    <p class="lead"><small>Google Maps will show you a mostly accurate picture of the city's bike lanes, but its route finder does not always select the best routes. The routes listed here are all tested and we tell you what to expect on your commute.</small></p>
                     {% include map.html id='ptp' data=site.data.bike-commute-routes.point-to-point %}
                 </div>
                 <div class="row" id="corridors">
@@ -63,12 +63,12 @@ bodyAttrs: data-spy="scroll" data-target="#sidebar" data-offset="30"
             <hr class="featurette-divider">
             {% include bike-shops.html %}
             <div class="clearfix"></div>
-            <hr class="featurette-divider">
+            <!-- <hr class="featurette-divider">
             <div class="row" id="tips">
                 <h2 class="featurette-heading">Tips</h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix"></div> -->
             <hr class="featurette-divider">
             <div class="row" id="resources">
                 <h2 class="featurette-heading">Resources</h2>
@@ -97,7 +97,7 @@ bodyAttrs: data-spy="scroll" data-target="#sidebar" data-offset="30"
             </ul>
             </li>
             <li class="list-group-item"><a href="#shops"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;&nbsp;Shops</a></li>
-            <li class="list-group-item"><a href="#tips"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Tips</a></li>
+            <!-- <li class="list-group-item"><a href="#tips"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Tips</a></li> -->
             <li class="list-group-item"><a href="#resources"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;Resources</a></li>
         </ul>
         <div class="alert alert-info">

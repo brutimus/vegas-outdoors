@@ -17,65 +17,11 @@
 </head>
 
 <body {{ page.bodyAttrs }}>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#">{{ site.name }}</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Vegas Outdoors</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bicycle&nbsp;<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/bicycle/commute/">Commute</a>
-                            </li>
-                            <li><a href="/bicycle/road/">Road</a>
-                            </li>
-                            <li><a href="/bicycle/mountain/">Mountain</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rock&nbsp;<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/rock/hike/">Hike</a>
-                            </li>
-                            <li><a href="/rock/climb/">Climb</a>
-                            </li>
-                            <li><a href="/rock/canyoneer/">Canyoneer</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Water&nbsp;<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/water/kayak/">Kayak</a>
-                            </li>
-                            <li><a href="/water/sail/">Sail</a>
-                            </li>
-                            <li><a href="/water/dive/">Dive</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/contribute/">Contribute</a>
-                    </li>
-                    <li><a href="/about/">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="visible-xs alert alert-danger alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <em>{{ site.name }}</em> is still under construction for mobile. Please excuse the mess!
     </div>
-
+    
     {{ content }}
 
     <!-- FOOTER -->

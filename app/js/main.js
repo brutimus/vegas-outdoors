@@ -87,7 +87,7 @@ require.config({
     }
 });
 
-require(['jquery', 'bootstrapDropdown', 'bootstrapCollapse', 'bootstrapScrollspy', 'bootstrapAffix'], function ($) {
+require(['jquery', 'bootstrapAlert', 'bootstrapDropdown', 'bootstrapCollapse', 'bootstrapScrollspy', 'bootstrapAffix'], function ($) {
     'use strict';
     
     // Off-Canvas Navigation Toggle
