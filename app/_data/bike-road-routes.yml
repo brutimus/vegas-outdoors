@@ -7,7 +7,7 @@ long:
       difficulty: Easy
       description: "The ride ride between Green Valley and Boulder City is an excellent one! With the new Union Pacific Railroad Trail in place, one needs to spend very little time negotiating roads. This route is mostly flat with a few hills around Railroad Pass Casino."
 
-  - name: Red Rocks Loop
+  - name: Red Rock Loop
     kmls:
       - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/red-rocks-loop.kml
     info:

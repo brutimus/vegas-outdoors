@@ -26,7 +26,7 @@ point-to-point:
   - name: Green Valley &harr; Summerlin
     kmls:
 
-  - name: Green Valley &harr; Red Rocks
+  - name: Green Valley &harr; Red Rock
     kmls:
       - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-redrocks.kml
     info:
@@ -46,7 +46,7 @@ point-to-point:
   - name: Summerlin &harr; North Las Vegas
     kmls:
 
-  - name: Boulder City &harr; Red Rocks
+  - name: Boulder City &harr; Red Rock
     kmls:
       - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-bouldercity.kml
       - http://vegas-outdoors.s3-website-us-west-1.amazonaws.com/kml/henderson-redrocks.kml
